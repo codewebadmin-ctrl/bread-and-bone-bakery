@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread & Bone Bakery - Share Your Story</title>
+    
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================================ -->
+    <!-- HEADER & NAVIGATION             -->
+    <!-- ================================ -->
+    <header>
+        <div class="logo">
+            <a href="index.html">Bread & Bone</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="services.html">The Menu</a></li>
+                <li><a href="enquiry.html">Share Your Story</a></li>
+                <li><a href="contact.html">Contact & Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================================ -->
+    <!-- HERO SECTION                    -->
+    <!-- ================================ -->
+    <section class="hero" style="height: 200px;">
+        <h1>Share Your Story</h1>
+        <p>Your story matters. We print these on our paper bags.</p>
+    </section>
+
+    <!-- ================================ -->
+    <!-- STORY FORM SECTION              -->
+    <!-- ================================ -->
+    <section class="section">
+        <div class="container">
+            <h2>Submit Your Story</h2>
+            <p>Share your story of loss, healing, or hope. We will print it on our bakery bags and share it with our community.</p>
+            <br>
+
+            <form id="story-form" action="#" method="POST">
+                
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                
+                <label for="email">Your Email *</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                
+                <label for="story">Your Story *</label>
+                <textarea id="story" name="story" rows="6" required placeholder="Share your story of loss, healing, or hope..."></textarea>
+                
+                <label for="permission">
+                    <input type="checkbox" id="permission" name="permission" required>
+                    I agree to have my story shared on the website and printed on bakery bags.
+                </label>
+                
+                <button type="submit" class="btn">Submit Your Story</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- ================================ -->
+    <!-- COMMUNITY LOAF DONATION         -->
+    <!-- ================================ -->
+    <section class="section" style="background-color: #fff;">
+        <div class="container">
+            <h2>Community Loaf Program</h2>
+            <p>Help us donate bread to local shelters. Every R50 you donate buys one loaf for someone in need.</p>
+            <br>
+
+            <form id="donation-form" action="#" method="POST">
+                
+                <label for="donation-name">Your Name *</label>
+                <input type="text" id="donation-name" name="donation-name" required placeholder="Enter your full name">
+                
+                <label for="donation-email">Your Email *</label>
+                <input type="email" id="donation-email" name="donation-email" required placeholder="Enter your email address">
+                
+                <label for="loaves">Number of Loaves to Donate *</label>
+                <input type="number" id="loaves" name="loaves" min="1" required placeholder="e.g., 1, 2, 3...">
+                
+                <button type="submit" class="btn">Donate Now</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- ================================ -->
+    <!-- FOOTER                           -->
+    <!-- ================================ -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bread & Bone Bakery. All rights reserved.</p>
+            <p>Follow us on Instagram: <a href="https://www.instagram.com/breadandbone_ct" target="_blank">@breadandbone_ct</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

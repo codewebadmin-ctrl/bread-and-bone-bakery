@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread & Bone Bakery - Contact & Order</title>
+    
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================================ -->
+    <!-- HEADER & NAVIGATION             -->
+    <!-- ================================ -->
+    <header>
+        <div class="logo">
+            <a href="index.html">Bread & Bone</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="services.html">The Menu</a></li>
+                <li><a href="enquiry.html">Share Your Story</a></li>
+                <li><a href="contact.html">Contact & Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================================ -->
+    <!-- HERO SECTION                    -->
+    <!-- ================================ -->
+    <section class="hero" style="height: 200px;">
+        <h1>Contact & Order</h1>
+        <p>We'd love to hear from you.</p>
+    </section>
+
+    <!-- ================================ -->
+    <!-- CONTACT FORM SECTION            -->
+    <!-- ================================ -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+
+                <!-- ===== CONTACT FORM ===== -->
+                <div>
+                    <h2>Get in Touch</h2>
+                    <br>
+                    <form id="contact-form" action="#" method="POST">
+                        
+                        <label for="contact-name">Your Name *</label>
+                        <input type="text" id="contact-name" name="contact-name" required placeholder="Enter your full name">
+                        
+                        <label for="contact-email">Your Email *</label>
+                        <input type="email" id="contact-email" name="contact-email" required placeholder="Enter your email address">
+                        
+                        <label for="contact-subject">Subject</label>
+                        <select id="contact-subject" name="contact-subject">
+                            <option value="order">Pre-order enquiry</option>
+                            <option value="catering">Catering enquiry</option>
+                            <option value="general">General enquiry</option>
+                        </select>
+                        
+                        <label for="contact-message">Message *</label>
+                        <textarea id="contact-message" name="contact-message" rows="5" required placeholder="Write your message here..."></textarea>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+
+                    </form>
+                </div>
+
+                <!-- ===== CONTACT DETAILS ===== -->
+                <div>
+                    <h2>Visit Us</h2>
+                    <br>
+                    <p><strong>Bread & Bone Bakery</strong></p>
+                    <p>123 Main Road<br>Woodstock, Cape Town<br>South Africa</p>
+                    <br>
+                    <p><strong>Phone:</strong> 021 123 4567</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@breadandbone.co.za">info@breadandbone.co.za</a></p>
+                    <br>
+                    <p><strong>Opening Hours:</strong></p>
+                    <p>Monday - Friday: 6:00 AM - 4:00 PM</p>
+                    <p>Saturday: 7:00 AM - 2:00 PM</p>
+                    <p>Sunday: Closed</p>
+                    <br>
+                    <p><strong>Follow us:</strong><br>
+                    <a href="https://www.instagram.com/breadandbone_ct" target="_blank">Instagram</a> | 
+                    <a href="#" target="_blank">Facebook</a></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================ -->
+    <!-- PRE-ORDER FORM SECTION          -->
+    <!-- ================================ -->
+    <section class="section" style="background-color: #fff;">
+        <div class="container">
+            <h2>Pre-Order Your Favourites</h2>
+            <p>Order online and pick up at the bakery.</p>
+            <br>
+
+            <form id="order-form" action="#" method="POST">
+                
+                <label for="order-name">Your Name *</label>
+                <input type="text" id="order-name" name="order-name" required placeholder="Enter your full name">
+                
+                <label for="order-email">Your Email *</label>
+                <input type="email" id="order-email" name="order-email" required placeholder="Enter your email address">
+                
+                <label for="order-loaf">Choose Your Loaf *</label>
+                <select id="order-loaf" name="order-loaf" required>
+                    <option value="">-- Select a product --</option>
+                    <option value="amina">Amina's Sunrise Loaf - R45</option>
+                    <option value="sipho">Sipho's Seed Bread - R50</option>
+                    <option value="croissant">Grief & Grace Croissant - R35</option>
+                    <option value="cookies">Staffroom Cookies - R25</option>
+                    <option value="sleepy">Sleepy Head Cookies - R28</option>
+                </select>
+                
+                <label for="order-quantity">Quantity *</label>
+                <input type="number" id="order-quantity" name="order-quantity" min="1" required placeholder="Enter number of items">
+                
+                <label for="order-date">Pickup Date *</label>
+                <input type="date" id="order-date" name="order-date" required>
+                
+                <button type="submit" class="btn">Submit Order</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- ================================ -->
+    <!-- FOOTER                           -->
+    <!-- ================================ -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bread & Bone Bakery. All rights reserved.</p>
+            <p>Follow us on Instagram: <a href="https://www.instagram.com/breadandbone_ct" target="_blank">@breadandbone_ct</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
