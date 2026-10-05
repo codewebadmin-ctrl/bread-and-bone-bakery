@@ -100,7 +100,7 @@ A website for Bread & Bone Bakery, a small family-run bakery in Woodstock, Cape 
 
 ## Changelog
 
-### [DATE] - Part 2 Submission
+### 03/10/2026 - Part 2 Submission
 - Changed all `px` values to `rem` in CSS for responsive design
 - Updated typography to use relative units
 - Updated spacing and padding to use relative units
@@ -110,7 +110,7 @@ A website for Bread & Bone Bakery, a small family-run bakery in Woodstock, Cape 
 - Updated README.md with Part 2 details
 - Pushed all changes to GitHub
 
-### [DATE] - Part 1 Submission
+### - Part 1 Submission
 - Created project folder structure (css/, js/, images/)
 - Created 5 HTML pages (index, about, services, enquiry, contact)
 - Added navigation menu linking all pages
