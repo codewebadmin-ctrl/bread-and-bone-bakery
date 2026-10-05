@@ -1,10 +1,9 @@
 # Bread & Bone Bakery - Website Project
 
 ## Student Information
-- **Name:** joel mulamba
+- **Name:** Joel Mulamba
 - **Student Number:** ST10528418
 - **Subject:** Web Development (WDV101)
-- **Module Code:** WEDE5020
 - **Date:** 9/2/2026
 
 ## Project Overview
@@ -44,7 +43,7 @@ A website for Bread & Bone Bakery, a small family-run bakery in Woodstock, Cape 
 
 ## Changelog
 
-###  - Part 1 Submission
+### [DATE] - Part 1 Submission
 - Created project folder structure (css/, js/, images/)
 - Created 5 HTML pages (index, about, services, enquiry, contact)
 - Added navigation menu linking all pages
@@ -71,3 +70,52 @@ A website for Bread & Bone Bakery, a small family-run bakery in Woodstock, Cape 
 ### Hosting Research
 - Xneelo (2024) *Web Hosting South Africa*. Available at: https://www.xneelo.co.za (Accessed: 2 September 2024).
 - Afrihost (2024) *Hosting Packages*. Available at: https://www.afrihost.co.za (Accessed: 2 September 2024).
+## Part 2 Details
+
+### CSS Styling
+- Created external stylesheet (`css/style.css`)
+- Linked stylesheet to all 5 HTML pages
+- Applied typography styles (Caveat, Open Sans, Playfair Display)
+- Applied colour scheme (Warm Brown #6B4226, Terracotta #C87A5A, Cream #F5EFE6, Yellow #F9C74F, Deep Black #1A1A1A)
+- Used CSS Grid and Flexbox for layout
+- Added hover effects and pseudo-classes (`:hover`, `:focus`, `:active`)
+- Used CSS reset for consistent styling across browsers
+
+### Responsive Design
+- Added media queries for mobile (`max-width: 768px`)
+- Used relative units (`rem`, `em`, `%`) for font sizes and spacing
+- Changed all `px` values to `rem` for better scalability
+- Implemented responsive layout that switches from multi-column to single-column on smaller screens
+- Modified font sizes and navigation for each breakpoint
+
+### Screenshots
+![Desktop View](images/screenshot-desktop.png)
+*Figure 5: Desktop View of Bread & Bone Bakery Website*
+
+![Tablet View](images/screenshot-tablet.png)
+*Figure 6: Tablet View of Bread & Bone Bakery Website*
+
+![Mobile View](images/screenshot-mobile.png)
+*Figure 7: Mobile View of Bread & Bone Bakery Website*
+
+## Changelog
+
+### [DATE] - Part 2 Submission
+- Changed all `px` values to `rem` in CSS for responsive design
+- Updated typography to use relative units
+- Updated spacing and padding to use relative units
+- Added media queries for mobile responsiveness (already present, verified)
+- Tested website on desktop, tablet, and mobile using Chrome DevTools
+- Captured and saved 3 screenshots (desktop, tablet, mobile)
+- Updated README.md with Part 2 details
+- Pushed all changes to GitHub
+
+### [DATE] - Part 1 Submission
+- Created project folder structure (css/, js/, images/)
+- Created 5 HTML pages (index, about, services, enquiry, contact)
+- Added navigation menu linking all pages
+- Added content to all pages
+- Created CSS file with styling
+- Created README.md
+- Added comments to HTML code
+- Pushed to GitHub
