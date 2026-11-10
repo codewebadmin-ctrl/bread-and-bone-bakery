@@ -1,121 +1,157 @@
-# Bread & Bone Bakery - Website Project
 
-## Student Information
-- **Name:** Joel Mulamba
-- **Student Number:** ST10528418
-- **Subject:** Web Development (WDV101)
-- **Date:** 9/2/2026
+# Bread & Bone Bakery Website
 
-## Project Overview
-A website for Bread & Bone Bakery, a small family-run bakery in Woodstock, Cape Town. The bakery was founded by Lungile Ndlovu after losing her 8-year-old daughter Amina to a rare heart condition. The business uses baking as a vehicle for healing, community connection, and hope.
+## WEDE5020 – Part 3
 
-## Website Goals and Objectives
-- Share Lungile's emotional journey authentically
-- Drive online orders for speciality loaves and custom cakes
-- Launch the "Community Loaf" donation program
-- Build a community where customers can share their own stories
+**Student Number:** ST10528418  
+**Project:** Bread & Bone Bakery  
+**Website Type:** Bakery business website
 
-## Key Features and Functionality
-- Story submission form
-- Pre-order system
-- Donation tracker
-- Instagram integration
-- Google Maps integration
+## 1. Project Overview
 
-## Pages
-| Page | Filename | Description |
-|------|----------|-------------|
-| Homepage | index.html | Hero video, introduction, call to action |
-| Our Story | about.html | History, mission, vision, team |
-| The Menu | services.html | Products with stories behind them |
-| Share Your Story | enquiry.html | Form for submitting stories and donating |
-| Contact & Order | contact.html | Contact form, location, pre-order form |
+Bread & Bone Bakery is a fictional artisan bakery based in Woodstock, Cape Town. This website was developed to create an online presence for the bakery, showcase its products and make it easier for customers to explore the menu, submit enquiries and contact the business.
 
-## Timeline and Milestones
-| Phase | Duration | Description |
-|-------|----------|-------------|
-| Part 1 | Weeks 1-2 | Research, planning, HTML structure |
-| Part 2 | Weeks 3-5 | CSS styling and responsive design |
-| Part 3 | Weeks 6-8 | JavaScript and SEO |
+The website continues the work completed in Part 2 and introduces additional functionality and improvements for Part 3.
 
-## Sitemap
-![Sitemap](images/sitemap.png)
+## 2. Website Objectives
 
-## Changelog
+- Present the bakery and its story.
+- Display bakery products and services.
+- Showcase bread, pastries and other bakery products.
+- Allow visitors to submit enquiries and donation requests.
+- Provide contact and pre-order request options.
+- Create a responsive and user-friendly experience.
+- Improve search engine optimisation and website accessibility.
 
-### [DATE] - Part 1 Submission
-- Created project folder structure (css/, js/, images/)
-- Created 5 HTML pages (index, about, services, enquiry, contact)
-- Added navigation menu linking all pages
-- Added content to all pages
-- Created CSS file with styling
-- Created README.md
-- Added comments to HTML code
-- Pushed to GitHub
+## 3. Website Pages
 
-## References
+| Page | Purpose |
+|---|---|
+| index.html | Homepage and bakery introduction |
+| about.html | Bakery background and story |
+| services.html | Bakery menu and products |
+| gallery.html | Interactive image gallery |
+| enquiry.html | Story submissions and donation calculator |
+| contact.html | Contact details and pre-order requests |
+| 404.html | Custom page-not-found page |
 
-### Text Content
-- All text content is original, created for this project based on the fictional story of Bread & Bone Bakery.
+## 4. Features and Functionality
 
-### Images
-- Unsplash (2024) *Free Stock Photos - Bakery*. Available at: https://unsplash.com (Accessed: 2 September 2024).
-- Pexels (2024) *Free Stock Photos - Bread and Baking*. Available at: https://www.pexels.com (Accessed: 2 September 2024).
+### Interactive Gallery
 
-### Fonts
-- Google Fonts (2024) *Caveat*. Available at: https://fonts.google.com/specimen/Caveat (Accessed: 2 September 2024).
-- Google Fonts (2024) *Open Sans*. Available at: https://fonts.google.com/specimen/Open+Sans (Accessed: 2 September 2024).
-- Google Fonts (2024) *Playfair Display*. Available at: https://fonts.google.com/specimen/Playfair+Display (Accessed: 2 September 2024).
+The gallery includes:
+- Image categories and filtering.
+- Live image search.
+- Image captions and alternative text.
+- Enlarged image lightbox.
+- Previous and next image navigation.
+- Responsive image layout.
 
-### Hosting Research
-- Xneelo (2024) *Web Hosting South Africa*. Available at: https://www.xneelo.co.za (Accessed: 2 September 2024).
-- Afrihost (2024) *Hosting Packages*. Available at: https://www.afrihost.co.za (Accessed: 2 September 2024).
-## Part 2 Details
+### Enquiry Functionality
 
-### CSS Styling
-- Created external stylesheet (`css/style.css`)
-- Linked stylesheet to all 5 HTML pages
-- Applied typography styles (Caveat, Open Sans, Playfair Display)
-- Applied colour scheme (Warm Brown #6B4226, Terracotta #C87A5A, Cream #F5EFE6, Yellow #F9C74F, Deep Black #1A1A1A)
-- Used CSS Grid and Flexbox for layout
-- Added hover effects and pseudo-classes (`:hover`, `:focus`, `:active`)
-- Used CSS reset for consistent styling across browsers
+The enquiry page includes:
+- Customer story submission form.
+- Donation calculator.
+- Dynamic donation total based on the number of loaves.
+- Form validation and feedback.
 
-### Responsive Design
-- Added media queries for mobile (`max-width: 768px`)
-- Used relative units (`rem`, `em`, `%`) for font sizes and spacing
-- Changed all `px` values to `rem` for better scalability
-- Implemented responsive layout that switches from multi-column to single-column on smaller screens
-- Modified font sizes and navigation for each breakpoint
+### Contact Functionality
 
-### Screenshots
-![Desktop View](images/screenshot-desktop.png)
-*Figure 5: Desktop View of Bread & Bone Bakery Website*
+The contact page includes:
+- Contact form.
+- Bakery pre-order request form.
+- Dynamic order price calculation.
+- Input validation.
+- Email application integration using mailto links.
 
-![Tablet View](images/screenshot-tablet.png)
-*Figure 6: Tablet View of Bread & Bone Bakery Website*
+**Important:** The forms prepare email requests using the visitor's default email application. They do not currently store submissions in a database or automatically process payments.
 
-![Mobile View](images/screenshot-mobile.png)
-*Figure 7: Mobile View of Bread & Bone Bakery Website*
+## 5. Technologies Used
 
-## Changelog
+- HTML5 – Website structure and content.
+- CSS3 – Styling and responsive layouts.
+- JavaScript – Interactive functionality and form calculations.
+- WebP – Optimised website images.
+- Git – Version control.
+- GitHub – Source code repository.
 
-### 03/10/2026 - Part 2 Submission
-- Changed all `px` values to `rem` in CSS for responsive design
-- Updated typography to use relative units
-- Updated spacing and padding to use relative units
-- Added media queries for mobile responsiveness (already present, verified)
-- Tested website on desktop, tablet, and mobile using Chrome DevTools
-- Captured and saved 3 screenshots (desktop, tablet, mobile)
-- Updated README.md with Part 2 details
-- Pushed all changes to GitHub
+## 6. Project Structure
 
-### - Part 1 Submission
-- Created project folder structure (css/, js/, images/)
-- Created 5 HTML pages (index, about, services, enquiry, contact)
-- Added navigation menu linking all pages
-- Added content to all pages
-- Created CSS file with styling
-- Created README.md
-- Added comments to HTML code
-- Pushed to GitHub
+```text
+Bread-and-Bone-Part-3/
+│
+├── index.html
+├── about.html
+├── services.html
+├── gallery.html
+├── enquiry.html
+├── contact.html
+├── 404.html
+├── sitemap.xml
+├── robots.txt
+├── README.md
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── contact.js
+│   ├── enquiry.js
+│   └── gallery.js
+│
+└── images/
+    └── Optimised bakery images
+```
+
+## 7. SEO and Accessibility
+
+SEO improvements include:
+- Unique page titles.
+- Meta descriptions and keywords.
+- Author metadata.
+- Open Graph metadata.
+- Semantic HTML elements.
+- Descriptive image alternative text.
+- Navigation labels.
+- Responsive viewport settings.
+- Sitemap and robots.txt files.
+
+Accessibility improvements include descriptive image text, labelled navigation, form labels and keyboard support for the gallery lightbox.
+
+## 8. Testing
+
+The gallery was tested for:
+- Image display.
+- Category filtering.
+- Live search.
+- Lightbox functionality.
+- Previous and next image navigation.
+
+Other pages and forms should also be tested across desktop and mobile screen sizes before final deployment.
+
+## 9. Deployment
+
+**Live Website URL:** [Add deployed website URL]
+
+**Official Part 3 GitHub Repository:**
+https://github.com/EMGPSD/wede5020-2026-part-3-st10528418.git
+
+## 10. References
+
+Add the original sources of any external images, tutorials, libraries, icons or other third-party resources used in the project.
+
+Images supplied by the student should be identified as student-provided resources.
+
+AI assistance should be disclosed according to the institution's academic integrity requirements.
+
+## 11. Project Development
+
+The project was developed incrementally, with changes tracked using Git commits.
+
+Development included:
+- Improving the original HTML structure.
+- Adding SEO metadata.
+- Improving contact and enquiry functionality.
+- Adding optimised bakery images.
+- Creating the interactive gallery.
+- Adding website support files and documentation.

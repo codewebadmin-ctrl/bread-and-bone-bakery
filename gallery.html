@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bakery Gallery | Bread & Bone Bakery</title>
+    <meta name="description" content="Explore the Bread & Bone Bakery gallery, featuring our artisan breads, fresh pastries, cookies and the people behind the bakery.">
+    <meta name="keywords" content="Bread and Bone Bakery, bakery gallery, artisan bread, pastries, cookies, Woodstock bakery">
+    <meta name="author" content="Bread & Bone Bakery">
+
+    <meta property="og:title" content="Bakery Gallery | Bread & Bone Bakery">
+    <meta property="og:description" content="Take a look at our artisan breads, pastries, cookies and bakery life.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/gallery.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">Our Story</a>
+            <a href="services.html">Our Menu</a>
+            <a href="gallery.html" aria-current="page">Gallery</a>
+            <a href="enquiry.html">Enquiries</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-intro">
+            <h1>Life at Bread & Bone</h1>
+            <p>
+                A little look inside our bakery — from freshly baked artisan
+                bread and golden pastries to the people and moments that make
+                Bread & Bone special.
+            </p>
+        </section>
+
+        <section class="gallery-section" aria-label="Bakery photo gallery">
+
+            <div class="gallery-controls">
+                <label for="gallery-search">Search the gallery</label>
+                <input
+                    type="search"
+                    id="gallery-search"
+                    placeholder="Search bread, pastries, cookies..."
+                >
+
+                <div class="gallery-filters" aria-label="Filter gallery images">
+                    <button type="button" class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="bread">
+                        Bread
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="pastries">
+                        Pastries
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="cookies">
+                        Cookies
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="behind-scenes">
+                        Behind the Scenes
+                    </button>
+                </div>
+            </div>
+
+            <p id="gallery-count" aria-live="polite">Showing all photos</p>
+
+            <div class="gallery-grid" id="gallery-grid">
+
+                <figure class="gallery-item" data-category="bread">
+                    <img src="images/seeded-artisan-loaf.webp" alt="Fresh artisan seeded bread loaf" loading="lazy">
+                    <figcaption>Our artisan seeded loaf</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="bread">
+                    <img src="images/seeded-bread-slices.webp" alt="Slices of freshly baked seeded bread" loading="lazy">
+                    <figcaption>Freshly sliced seeded bread</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="bread">
+                    <img src="images/seeded-sourdough-closeup.webp" alt="Close-up of artisan seeded sourdough" loading="lazy">
+                    <figcaption>Made with care, baked fresh</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="bread">
+                    <img src="images/sourdough-slices.webp" alt="Fresh sourdough bread slices" loading="lazy">
+                    <figcaption>Our sourdough selection</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="bread">
+                    <img src="images/seeded-loaf-and-slices.webp" alt="Whole seeded loaf with freshly cut slices" loading="lazy">
+                    <figcaption>From whole loaf to table</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="pastries">
+                    <img src="images/chocolate-croissant.webp" alt="Fresh chocolate-filled croissant" loading="lazy">
+                    <figcaption>Chocolate croissant</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="cookies">
+                    <img src="images/oat-cookies-and-tea.webp" alt="Oat cookies served with a cup of tea" loading="lazy">
+                    <figcaption>A little something with your tea</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="behind-scenes">
+                    <img src="images/bakery-owner-and-team.webp" alt="Bakery owner and team at work" loading="lazy">
+                    <figcaption>The people behind the bakery</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="behind-scenes">
+                    <img src="images/fresh-bread-cooling.webp" alt="Freshly baked bread cooling after baking" loading="lazy">
+                    <figcaption>Fresh from the oven</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="bread">
+                    <img src="images/sourdough-slices-window.webp" alt="Sourdough bread slices displayed by a window" loading="lazy">
+                    <figcaption>Fresh sourdough, every day</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="bread">
+                    <img src="images/seeded-bread-closeup.webp" alt="Close-up view of seeded artisan bread" loading="lazy">
+                    <figcaption>Good bread starts with the details</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="bread">
+                    <img src="images/artisan-baguettes.webp" alt="Fresh artisan baguettes" loading="lazy">
+                    <figcaption>Golden artisan baguettes</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="bread">
+                    <img src="images/artisan-baguettes-basket.webp" alt="Artisan baguettes arranged in a basket" loading="lazy">
+                    <figcaption>Ready to share</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="behind-scenes">
+                    <img src="images/bakery-bread-display.webp" alt="Bread selection displayed in the bakery" loading="lazy">
+                    <figcaption>A display full of fresh goodness</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="pastries">
+                    <img src="images/fresh-croissants-tray.webp" alt="Tray of freshly baked croissants" loading="lazy">
+                    <figcaption>Freshly baked croissants</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="pastries">
+                    <img src="images/assorted-pastries.webp" alt="Assortment of freshly baked pastries" loading="lazy">
+                    <figcaption>Something for every craving</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="cookies">
+                    <img src="images/bakery-cookies.webp" alt="Freshly baked bakery cookies" loading="lazy">
+                    <figcaption>Cookies made with love</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="pastries">
+                    <img src="images/fresh-pastries.webp" alt="Selection of fresh bakery pastries" loading="lazy">
+                    <figcaption>A fresh batch of pastries</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="bread">
+                    <img src="images/seeded-loaf-and-slices.webp" alt="Seeded artisan loaf and slices ready to serve" loading="lazy">
+                    <figcaption>Our seeded loaf, ready to enjoy</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="cookies">
+                    <img src="images/oat-cookies-and-tea.webp" alt="Oat cookies and tea on a table" loading="lazy">
+                    <figcaption>Slow moments and something sweet</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-category="behind-scenes">
+                    <img src="images/fresh-bread-cooling.webp" alt="Fresh bakery bread cooling on a rack" loading="lazy">
+                    <figcaption>Another fresh batch, made today</figcaption>
+                </figure>
+
+            </div>
+
+            <p id="gallery-empty" hidden>
+                No photos match your search. Try another word or category.
+            </p>
+        </section>
+
+        <!-- Image lightbox -->
+        <div class="gallery-lightbox" id="gallery-lightbox" hidden role="dialog" aria-modal="true" aria-label="Enlarged gallery image">
+            <button type="button" id="lightbox-close" aria-label="Close enlarged image">
+                &times;
+            </button>
+
+            <button type="button" id="lightbox-prev" aria-label="Previous image">
+                &#10094;
+            </button>
+
+            <figure>
+                <img id="lightbox-image" src="" alt="">
+                <figcaption id="lightbox-caption"></figcaption>
+            </figure>
+
+            <button type="button" id="lightbox-next" aria-label="Next image">
+                &#10095;
+            </button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bread & Bone Bakery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
