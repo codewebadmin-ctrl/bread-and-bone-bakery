@@ -1,26 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bread & Bone Bakery - The Menu</title>
-    
-    <!-- ===== GOOGLE FONTS ===== -->
+
+    <!-- SEO Metadata -->
+    <title>Our Menu | Bread & Bone Bakery</title>
+    <meta name="description" content="Explore the Bread & Bone Bakery menu in Woodstock, Cape Town. Discover artisan sourdough loaves, pastries and freshly baked cookies, with prices.">
+    <meta name="keywords" content="Bread and Bone Bakery menu, sourdough bread, artisan bakery, Cape Town bakery, Woodstock bakery, pastries, cookies">
+    <meta name="author" content="Bread & Bone Bakery">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Our Menu | Bread & Bone Bakery">
+    <meta property="og:description" content="Explore our artisan sourdough loaves, pastries and cookies at Bread & Bone Bakery.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-    
-    <!-- ===== CSS ===== -->
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- ================================ -->
-    <!-- HEADER & NAVIGATION             -->
-    <!-- ================================ -->
+    <!-- HEADER & NAVIGATION -->
     <header>
         <div class="logo">
             <a href="index.html">Bread & Bone</a>
         </div>
-        <nav>
+
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Our Story</a></li>
@@ -31,87 +41,96 @@
         </nav>
     </header>
 
-    <!-- ================================ -->
-    <!-- HERO SECTION                    -->
-    <!-- ================================ -->
-    <section class="hero" style="height: 250px;">
-        <h1>Our Menu</h1>
-        <p>Every item has a story. Every bite has meaning.</p>
-    </section>
+    <main>
 
-    <!-- ================================ -->
-    <!-- MENU SECTION                    -->
-    <!-- ================================ -->
-    <section class="section">
-        <div class="container">
+        <!-- HERO SECTION -->
+        <section class="hero" style="height: 250px;">
+            <h1>Our Menu</h1>
+            <p>Every item has a story. Every bite has meaning.</p>
+        </section>
 
-            <h2>Sourdough Loaves</h2>
-            <br>
-            <div class="product-grid">
+        <!-- MENU SECTION -->
+        <section class="section">
+            <div class="container">
 
-                <div class="product-card">
-                    <img src="images/aminas-loaf.jpg" alt="Amina's Sunrise Loaf">
-                    <h3>Amina's Sunrise Loaf</h3>
-                    <p>A golden sourdough with sunflower seeds and honey. Named after Lungile's daughter, Amina, whose nickname was "Sunshine." The sunflower seeds are her favourite flower.</p>
-                    <p class="price">R45</p>
-                </div>
+                <!-- SOURDOUGH LOAVES -->
+                <section aria-labelledby="sourdough-heading">
+                    <h2 id="sourdough-heading">Sourdough Loaves</h2>
 
-                <div class="product-card">
-                    <img src="images/siphos-seed.jpg" alt="Sipho's Seed Bread">
-                    <h3>Sipho's Seed Bread</h3>
-                    <p>A dense, nutty loaf with pumpkin, flax, and chia seeds. Named after Lungile's husband, Sipho – the rock of the family.</p>
-                    <p class="price">R50</p>
-                </div>
+                    <div class="product-grid">
+
+                        <div class="product-card">
+                            <img src="images/aminas-loaf.jpg" alt="Amina's Sunrise sourdough loaf with sunflower seeds and honey">
+                            <h3>Amina's Sunrise Loaf</h3>
+                            <p>A golden sourdough with sunflower seeds and honey. Named after Lungile's daughter, Amina, whose nickname was "Sunshine." The sunflower seeds are her favourite flower.</p>
+                            <p class="price">R45</p>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/siphos-seed.jpg" alt="Sipho's Seed Bread, a dense loaf with pumpkin, flax and chia seeds">
+                            <h3>Sipho's Seed Bread</h3>
+                            <p>A dense, nutty loaf with pumpkin, flax, and chia seeds. Named after Lungile's husband, Sipho – the rock of the family.</p>
+                            <p class="price">R50</p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- PASTRIES -->
+                <section aria-labelledby="pastries-heading" style="margin-top: 40px;">
+                    <h2 id="pastries-heading">Pastries</h2>
+
+                    <div class="product-grid">
+
+                        <div class="product-card">
+                            <img src="images/grief-grace.jpg" alt="Grief & Grace chocolate croissant with flaky pastry">
+                            <h3>Grief & Grace Croissant</h3>
+                            <p>Buttery, flaky, filled with dark chocolate and a pinch of sea salt. The salt represents tears. The chocolate represents finding sweetness in pain.</p>
+                            <p class="price">R35</p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- COOKIES -->
+                <section aria-labelledby="cookies-heading" style="margin-top: 40px;">
+                    <h2 id="cookies-heading">Cookies</h2>
+
+                    <div class="product-grid">
+
+                        <div class="product-card">
+                            <img src="images/staffroom-cookies.jpg" alt="Staffroom sugar cookies decorated with heart-shaped sprinkles">
+                            <h3>Staffroom Cookies</h3>
+                            <p>Simple sugar cookies with heart-shaped sprinkles. A tribute to the nurses at Red Cross Hospital who became family.</p>
+                            <p class="price">R25</p>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/sleepy-head.jpg" alt="Sleepy Head oatmeal cookies with chamomile and honey">
+                            <h3>Sleepy Head Cookies</h3>
+                            <p>Oatmeal cookies with chamomile and honey. Perfect for winding down at night.</p>
+                            <p class="price">R28</p>
+                        </div>
+
+                    </div>
+                </section>
 
             </div>
+        </section>
 
-            <br><br>
+    </main>
 
-            <h2>Pastries</h2>
-            <br>
-            <div class="product-grid">
-
-                <div class="product-card">
-                    <img src="images/grief-grace.jpg" alt="Grief & Grace Croissant">
-                    <h3>Grief & Grace Croissant</h3>
-                    <p>Buttery, flaky, filled with dark chocolate and a pinch of sea salt. The salt represents tears. The chocolate represents finding sweetness in pain.</p>
-                    <p class="price">R35</p>
-                </div>
-
-            </div>
-
-            <br><br>
-
-            <h2>Cookies</h2>
-            <br>
-            <div class="product-grid">
-
-                <div class="product-card">
-                    <img src="images/staffroom-cookies.jpg" alt="Staffroom Cookies">
-                    <h3>Staffroom Cookies</h3>
-                    <p>Simple sugar cookies with heart-shaped sprinkles. A tribute to the nurses at Red Cross Hospital who became family.</p>
-                    <p class="price">R25</p>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/sleepy-head.jpg" alt="Sleepy Head Cookies">
-                    <h3>Sleepy Head Cookies</h3>
-                    <p>Oatmeal cookies with chamomile and honey. Perfect for winding down at night.</p>
-                    <p class="price">R28</p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ================================ -->
-    <!-- FOOTER                           -->
-    <!-- ================================ -->
+    <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Bread & Bone Bakery. All rights reserved.</p>
-            <p>Follow us on Instagram: <a href="https://www.instagram.com/breadandbone_ct" target="_blank">@breadandbone_ct</a></p>
+            <p>&copy; 2026 Bread & Bone Bakery. All rights reserved.</p>
+
+            <p>
+                Follow us on Instagram:
+                <a href="https://www.instagram.com/breadandbone_ct"
+                   target="_blank"
+                   rel="noopener noreferrer">@breadandbone_ct</a>
+            </p>
         </div>
     </footer>
 
