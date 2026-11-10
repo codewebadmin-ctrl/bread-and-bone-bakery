@@ -131,7 +131,7 @@ Other pages and forms should also be tested across desktop and mobile screen siz
 
 ## 9. Deployment
 
-**Live Website URL:** [Add deployed website URL]
+**Live Website URL:** https://codewebadmin-ctrl.github.io/bread-and-bone-bakery/
 
 **Official Part 3 GitHub Repository:**
 https://github.com/EMGPSD/wede5020-2026-part-3-st10528418.git
