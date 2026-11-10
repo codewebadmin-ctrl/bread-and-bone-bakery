@@ -1,26 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bread & Bone Bakery - Share Your Story</title>
-    
-    <!-- ===== GOOGLE FONTS ===== -->
+
+    <!-- SEO Metadata -->
+    <title>Share Your Story | Bread & Bone Bakery</title>
+    <meta name="description" content="Share a story of loss, healing or hope with the Bread & Bone Bakery community in Woodstock, Cape Town, or support our Community Loaf donation programme.">
+    <meta name="keywords" content="share your story, community bakery, bread donation, Community Loaf Programme, Woodstock bakery, Cape Town community">
+    <meta name="author" content="Bread & Bone Bakery">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Share Your Story | Bread & Bone Bakery">
+    <meta property="og:description" content="Share your story or support the Community Loaf programme at Bread & Bone Bakery.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-    
-    <!-- ===== CSS ===== -->
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- ================================ -->
-    <!-- HEADER & NAVIGATION             -->
-    <!-- ================================ -->
+    <!-- HEADER & NAVIGATION -->
     <header>
         <div class="logo">
             <a href="index.html">Bread & Bone</a>
         </div>
-        <nav>
+
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Our Story</a></li>
@@ -31,78 +41,128 @@
         </nav>
     </header>
 
-    <!-- ================================ -->
-    <!-- HERO SECTION                    -->
-    <!-- ================================ -->
-    <section class="hero" style="height: 200px;">
-        <h1>Share Your Story</h1>
-        <p>Your story matters. We print these on our paper bags.</p>
-    </section>
+    <main>
 
-    <!-- ================================ -->
-    <!-- STORY FORM SECTION              -->
-    <!-- ================================ -->
-    <section class="section">
-        <div class="container">
-            <h2>Submit Your Story</h2>
-            <p>Share your story of loss, healing, or hope. We will print it on our bakery bags and share it with our community.</p>
-            <br>
+        <!-- HERO SECTION -->
+        <section class="hero" style="height: 200px;">
+            <h1>Share Your Story</h1>
+            <p>Your story matters. We print these on our paper bags.</p>
+        </section>
 
-            <form id="story-form" action="#" method="POST">
-                
-                <label for="name">Your Name *</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                
-                <label for="email">Your Email *</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email address">
-                
-                <label for="story">Your Story *</label>
-                <textarea id="story" name="story" rows="6" required placeholder="Share your story of loss, healing, or hope..."></textarea>
-                
-                <label for="permission">
-                    <input type="checkbox" id="permission" name="permission" required>
-                    I agree to have my story shared on the website and printed on bakery bags.
-                </label>
-                
-                <button type="submit" class="btn">Submit Your Story</button>
+        <!-- STORY SUBMISSION SECTION -->
+        <section class="section">
+            <div class="container">
+                <h2>Submit Your Story</h2>
 
-            </form>
-        </div>
-    </section>
+                <p>Share your story of loss, healing, or hope. We will print it on our bakery bags and share it with our community.</p>
 
-    <!-- ================================ -->
-    <!-- COMMUNITY LOAF DONATION         -->
-    <!-- ================================ -->
-    <section class="section" style="background-color: #fff;">
-        <div class="container">
-            <h2>Community Loaf Program</h2>
-            <p>Help us donate bread to local shelters. Every R50 you donate buys one loaf for someone in need.</p>
-            <br>
+                <form id="story-form">
 
-            <form id="donation-form" action="#" method="POST">
-                
-                <label for="donation-name">Your Name *</label>
-                <input type="text" id="donation-name" name="donation-name" required placeholder="Enter your full name">
-                
-                <label for="donation-email">Your Email *</label>
-                <input type="email" id="donation-email" name="donation-email" required placeholder="Enter your email address">
-                
-                <label for="loaves">Number of Loaves to Donate *</label>
-                <input type="number" id="loaves" name="loaves" min="1" required placeholder="e.g., 1, 2, 3...">
-                
-                <button type="submit" class="btn">Donate Now</button>
+                    <label for="name">Your Name *</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required
+                        placeholder="Enter your full name">
 
-            </form>
-        </div>
-    </section>
+                    <label for="email">Your Email *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                        placeholder="Enter your email address">
 
-    <!-- ================================ -->
-    <!-- FOOTER                           -->
-    <!-- ================================ -->
+                    <label for="story">Your Story *</label>
+                    <textarea
+                        id="story"
+                        name="story"
+                        rows="6"
+                        required
+                        placeholder="Share your story of loss, healing, or hope..."></textarea>
+
+                    <label for="permission">
+                        <input
+                            type="checkbox"
+                            id="permission"
+                            name="permission"
+                            required>
+                        I agree to have my story shared on the website and printed on bakery bags.
+                    </label>
+
+                    <button type="submit" class="btn">Submit Your Story</button>
+
+                    <p id="story-feedback" role="status" aria-live="polite"></p>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- COMMUNITY LOAF DONATION SECTION -->
+        <section class="section" style="background-color: #fff;">
+            <div class="container">
+                <h2>Community Loaf Program</h2>
+
+                <p>Help us donate bread to local shelters. Every R50 you donate buys one loaf for someone in need.</p>
+
+                <form id="donation-form">
+
+                    <label for="donation-name">Your Name *</label>
+                    <input
+                        type="text"
+                        id="donation-name"
+                        name="donation-name"
+                        autocomplete="name"
+                        required
+                        placeholder="Enter your full name">
+
+                    <label for="donation-email">Your Email *</label>
+                    <input
+                        type="email"
+                        id="donation-email"
+                        name="donation-email"
+                        autocomplete="email"
+                        required
+                        placeholder="Enter your email address">
+
+                    <label for="loaves">Number of Loaves to Donate *</label>
+                    <input
+                        type="number"
+                        id="loaves"
+                        name="loaves"
+                        min="1"
+                        step="1"
+                        required
+                        placeholder="e.g., 1, 2, 3...">
+
+                    <p id="donation-total" aria-live="polite">
+                        Select the number of loaves to calculate your donation.
+                    </p>
+
+                    <button type="submit" class="btn">Review Donation</button>
+
+                    <div id="donation-feedback" role="status" aria-live="polite"></div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Bread & Bone Bakery. All rights reserved.</p>
-            <p>Follow us on Instagram: <a href="https://www.instagram.com/breadandbone_ct" target="_blank">@breadandbone_ct</a></p>
+            <p>&copy; 2026 Bread & Bone Bakery. All rights reserved.</p>
+
+            <p>
+                Follow us on Instagram:
+                <a href="https://www.instagram.com/breadandbone_ct"
+                   target="_blank"
+                   rel="noopener noreferrer">@breadandbone_ct</a>
+            </p>
         </div>
     </footer>
 
